@@ -1,7 +1,6 @@
-
-
 <!DOCTYPE html>
 <html>
   <body>
+{% for s in site.static_files %}{{ s.path }}{% endfor %}
   </body>
 </html>
