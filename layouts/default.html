@@ -2,21 +2,7 @@
 <html>
 
 <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1><a href="https://hallhassi.github.io/jekyll/">jekyll</a></h1>
-      
-
-      /README.md/assets/Screenshot 2022-09-29 10.07.14 PM.png/assets/Screenshot 2022-09-29 9.27.18 PM.png/assets/Screenshot 2022-10-07 10.18.49 PM.png/assets/Screenshot 2022-10-16 11.07.40 PM.png/assets/a/config.yaml/layouts/default.html
-  
-
-
-      
-    </div>a
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-  
-
+    {% for s in site.static_files %}<img src="{{ s.path }}">{% endfor %}
 </body>
   
 </html>
