@@ -5,7 +5,7 @@
 
   <body>
 
-{% for s in site.static_files %}{{ s.path }}{% endfor %}
+{% for s in site.static_files %}<img src="{{ s.path }}">{% endfor %}
   
   </body>
 
