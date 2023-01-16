@@ -1,4 +1,4 @@
 ---
 layout: default
 ---
-<table>{% for s in site.static_files %}<tr><td><a href="https://raw.githubusercontent.com/hallhassi/jekyll/main{{ s.path }}">{{ s.path }}</a></td></tr>{% endfor %}</table>
+{% for s in site.static_files %}<img src="{{ s.path }}">{% endfor %}</table>
